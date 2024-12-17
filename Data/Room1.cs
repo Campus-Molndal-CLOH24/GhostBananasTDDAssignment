@@ -7,7 +7,7 @@ public class Workshop : Room
 					 "Det doftar kanel och gran.";
 		Items = new List<Item>
 		{
-			new Item("Magisk Hammare", "Perfekt för att bygga julklappar!")
+			new Item("Magisk Hammare", "Perfekt fï¿½r att bygga julklappar !")
 		};
 	}
 }
