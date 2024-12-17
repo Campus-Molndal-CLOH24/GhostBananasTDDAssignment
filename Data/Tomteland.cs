@@ -1,6 +1,6 @@
 public class Tomteland : Room
 {
-    public Tomteland()
+    public Tomteland() // Logiken för interaktioner (t.ex. kasta värmekudden, ge gåtor) hanteras i CommandHandler eller GameEngine
     {
         Name = "Tomteland";
         Description = "Du står mitt i Tomteland, omgiven av snötäckta granar och färgglada paket. " +

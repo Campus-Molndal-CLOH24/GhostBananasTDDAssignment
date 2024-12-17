@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 public class Pepparkaksbyn : Room
 {
-    public Pepparkaksbyn()
+    public Pepparkaksbyn()  // Logiken för interaktioner (t.ex. kasta värmekudden, ge gåtor) hanteras i CommandHandler eller GameEngine
     {
         Name = "Pepparkaksbyn";
         Description = "Du befinner dig i Pepparkaksbyn, där husen, marken och till och med " +
@@ -20,7 +20,7 @@ public class Pepparkaksbyn : Room
         Items = new List<Item>
         {
             new Item("Degen", "En klump pepparkaksdeg som du hämtat från köket under ett bord.")
-            // Lägga till fler Items om du behövs.
+            
         };
     }
 }

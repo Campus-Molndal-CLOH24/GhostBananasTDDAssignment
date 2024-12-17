@@ -1,7 +1,6 @@
 public class RudolfsHed : Room
 {
-    // Logiken för spelvalen (snön, stallet, bastun) hanteras inte här,
-    // utan i exempelvis CommandHandler.
+    // Logiken för interaktioner (t.ex. kasta värmekudden, ge gåtor) hanteras i CommandHandler eller GameEngine
     public RudolfsHed()
     {
         Name = "Rudolfs Hed";

@@ -1,6 +1,6 @@
 public class PolarkylansSkog : Room
 {
-	// Logiken för spelvalen och gåtan hanteras inte här, utan t.ex. i CommandHandler.
+	// Logiken för interaktioner (t.ex. kasta värmekudden, ge gåtor) hanteras i CommandHandler eller GameEngine
 	public PolarkylansSkog()
 	{
 		Name = "Polarkylans Skog";

@@ -1,6 +1,6 @@
 public class IsgrottansHjarta : Room
 {
-	// Logiken för interaktioner (t.ex. kasta värmekudden, ge gåtor) hanteras i CommandHandler eller liknande.
+	// Logiken för interaktioner (t.ex. kasta värmekudden, ge gåtor) hanteras i CommandHandler eller GameEngine
 	public IsgrottansHjarta()
 	{
 		Name = "Isgrottans Hjärta";
