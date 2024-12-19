@@ -1,4 +1,6 @@
-﻿public class WorkshopStatus
+﻿using GhostBananasTDDAssignment.Logic;
+
+public class WorkshopStatus
 {
     public void ShowStatus(GameState state)
     {
