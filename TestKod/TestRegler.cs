@@ -1,5 +1,4 @@
-﻿```csharp
-[TestClass]
+﻿[TestClass]
 public class SuperEvilTests
 {
 	[TestMethod]
