@@ -1,6 +1,9 @@
-﻿/// <summary>
+﻿using GhostBananasTDDAssignment.Logic;
+
+/// <summary>
 /// Represents the main menu of the game "JULTOMTENS KODÄVENTYR".
 /// </summary>
+
 public class MainMenu
 {
     /// <summary>
