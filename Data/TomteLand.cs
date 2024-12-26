@@ -1,6 +1,8 @@
+using GhostBananasTDDAssignment.Data;
+
 public class Tomteland : Room
 {
-    public Tomteland() // Logiken för interaktioner (t.ex. laga leksaker, slå in paket) hanteras i CommandHandler eller GameEngine
+    public Tomteland() 
     {
         Name = "Tomteland";
         Description = "Du står mitt i Tomteland, omgiven av snötäckta granar och färgglada paket. " +
