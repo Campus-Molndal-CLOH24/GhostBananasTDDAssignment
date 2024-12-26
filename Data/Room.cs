@@ -1,67 +1,49 @@
 using System.Collections.Generic;
+using System.Linq;
 
-public class Room
+namespace GhostBananasTDDAssignment.Data
 {
-    // Namn på rummet, ex "Tomtens verkstad"
-    // Här är alltså bara rumsdata, själva logiken sker på andra ställen.
-    public string Name { get; set; }
-
-    // Kort beskrivning av rummet. Försök få in stämning och miljöbeskrivningar.
-    public string Description { get; set; }
-
-    // Föremål som finns i rummet. Kan vara allt från leksaker till magiska föremål.
-    public List<Item> Items { get; set; }
-
-    // Utgångar till andra rum. Använd "norr", "söder", etc. eller annat som kommandon.
-    // Detta gör att spelaren kan navigera runt i världen.
-    public Dictionary<string, Room> Exits { get; set; }
-
-    public Room()
+    public class Room
     {
-        // Initiellt tomt, vi fyller på i våra konkreta rumsklasser.
-        Items = new List<Item>();
-        Exits = new Dictionary<string, Room>();
-    }
+        public string Name { get; set; }
+        public string Description { get; set; }
 
-    // Metod för att koppla detta rum till ett annat.
-    // Skriv t.ex. "norr" för att gå till något annat rum.
-    // Tänk på att ni måste lägga till utgångar i båda rummen om vi vill kunna gå fram och tillbaka.
-    public void AddExit(string direction, Room room)
-    {
-        if (!Exits.ContainsKey(direction))
+        // Ändrat från List<string> till List<Item>
+        public List<Item> Items { get; set; } = new List<Item>();
+
+        // Rummen behöver fortfarande kunna länka till varandra
+        public Dictionary<string, Room> Exits { get; set; } = new Dictionary<string, Room>();
+
+        // Metod för att titta runt i rummet
+        public string LookAround()
         {
-            Exits.Add(direction, room);
-        }
-    }
+            // Bygg ihop en text som beskriver rummet, föremål och utgångar
+            string info = $"Du befinner dig i {Name}.\n{Description}\n";
 
-    // Denna metod används för att visa info om rummet när spelaren tittar sig omkring.
-    // Den skriver ut namnet, beskrivningen, vilka föremål som finns och vilka håll man kan gå.
-    public string LookAround()
-    {
-        string info = $"{Name}\n{Description}\n";
-
-        // Om det finns föremål, lista dem
-        if (Items.Count > 0)
-        {
-            info += "I rummet ser du:\n";
-            foreach (var item in Items)
+            // Visa vilka Items som ligger i rummet
+            if (Items.Count > 0)
             {
-                info += $"- {item.Name}\n";
+                info += "Du ser följande föremål här: ";
+                // Vi visar bara itemets Name. Vill du visa mer kan du även ta med itemets Description.
+                var itemNames = Items.Select(item => item.Name);
+                info += string.Join(", ", itemNames) + "\n";
             }
-        }
-
-        // Om det finns utgångar, visa dem
-        if (Exits.Count > 0)
-        {
-            info += "Du kan gå mot: ";
-            foreach (var exit in Exits.Keys)
+            else
             {
-                info += $"{exit} ";
+                info += "Här finns inga föremål.\n";
             }
-            info += "\n";
-        }
 
-        return info;
+            // Visa vilka utgångar som finns
+            if (Exits.Count > 0)
+            {
+                info += $"Utgångar: {string.Join(", ", Exits.Keys)}\n";
+            }
+            else
+            {
+                info += "Det finns inga tydliga utgångar här.\n";
+            }
+
+            return info;
+        }
     }
 }
-

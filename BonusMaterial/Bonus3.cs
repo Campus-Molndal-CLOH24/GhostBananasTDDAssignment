@@ -1,4 +1,4 @@
-﻿public class SnowAnimation
+﻿/*public class SnowAnimation
 {
     private const int WIDTH = 60;
     private const int HEIGHT = 20;
@@ -29,4 +29,4 @@
             Console.WriteLine();
         }
     }
-}
+} */

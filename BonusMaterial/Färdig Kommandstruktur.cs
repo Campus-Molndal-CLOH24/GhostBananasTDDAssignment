@@ -1,4 +1,4 @@
-﻿public static class Commands
+﻿/* public static class Commands
 {
     private static readonly Dictionary<string, string> CommandHelp = new()
     {
@@ -18,4 +18,4 @@
             Console.WriteLine(help);
         }
     }
-}
+} */

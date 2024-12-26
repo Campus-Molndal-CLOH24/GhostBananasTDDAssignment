@@ -1,4 +1,4 @@
-﻿public class ChristmasAchievements
+﻿/* public class ChristmasAchievements
 {
     private readonly Dictionary<string, bool> _achievements = new()
     {
@@ -25,4 +25,4 @@
         Console.WriteLine($"✨ {name} ✨");
         Console.WriteLine();
     }
-}
+} */

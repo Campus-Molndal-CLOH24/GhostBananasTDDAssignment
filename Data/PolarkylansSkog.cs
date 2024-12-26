@@ -1,6 +1,8 @@
+using GhostBananasTDDAssignment.Data;
+
 public class PolarkylansSkog : Room
 {
-    // Logiken för interaktioner (t.ex. lokalisera isräven, lösa gåtor) hanteras i CommandHandler eller GameEngine
+   
     public PolarkylansSkog()
     {
         Name = "Polarkylans Skog";

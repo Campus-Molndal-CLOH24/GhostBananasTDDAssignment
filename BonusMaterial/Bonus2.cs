@@ -1,4 +1,4 @@
-﻿public class ChristmasMusicPlayer
+﻿/* public class ChristmasMusicPlayer
 {
 	private readonly string[] _musicNotes = new[] { "🎵", "🎶" };
 	private int _noteIndex = 0;
@@ -17,4 +17,4 @@
 		}
 		Console.WriteLine("\nHo ho ho!");
 	}
-}
+} */

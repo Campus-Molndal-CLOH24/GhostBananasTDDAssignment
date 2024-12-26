@@ -1,22 +1,21 @@
-public class Player
+using System.Collections.Generic;
+using GhostBananasTDDAssignment.Data; 
+
+namespace GhostBananasTDDAssignment.Data
 {
-    public string Name { get; set; }
-    public List<Item> Inventory { get; private set; }
-    public Room CurrentRoom { get; set; }
-
-    public Player(string name)
+    public class Player
     {
-        Name = name;
-        Inventory = new List<Item>();
-    }
+        // T.ex. en enkel inventory listan av "Item" eller "string"
+        public List<Item> Inventory { get; set; } = new List<Item>();
 
-    public bool AddItem(Item item)
-    {
-        if (Inventory.Count >= 5) // Du bestämmer själv maxgränsen
+        // Referens till rummets klass
+        public Room CurrentRoom { get; set; }
+
+        public string Name { get; set; }
+
+        public Player(string name)
         {
-            return false; // Inventory fullt!
+            Name = name;
         }
-        Inventory.Add(item);
-        return true;
     }
 }

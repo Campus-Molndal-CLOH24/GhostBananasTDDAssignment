@@ -1,6 +1,8 @@
+using GhostBananasTDDAssignment.Data;
+
 public class RudolfsHed : Room
 {
-    // Logiken för interaktioner (t.ex. lokalisera Rudolf, använda värmekudden) hanteras i CommandHandler eller GameEngine
+
     public RudolfsHed()
     {
         Name = "Rudolfs Hed";

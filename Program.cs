@@ -1,4 +1,5 @@
-﻿using GhostBananasTDDAssignment.Logic;
+﻿using GhostBananasTDDAssignment;
+using GhostBananasTDDAssignment.Logic;
 
 /// <summary>
 /// Represents the main menu of the game "JULTOMTENS KODÄVENTYR".
@@ -86,17 +87,17 @@ public class MainMenu
 /// <summary>
 /// Command to move the player in the game.
 /// </summary>
-public class MoveCommand : ICommandHandler
+public class MoveCommand : CommandHandler
 {
     // The current state of the game.
     // This is where the player's position and the game world are stored.
-    private readonly GameState _gameState;
+    private readonly GameStates _gameState;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="MoveCommand"/> class.
     /// </summary>
     /// <param name="gameState">The current state of the game.</param>
-    public MoveCommand(GameState gameState)
+    public MoveCommand(GameStates gameState)
     {
         _gameState = gameState;
     }
