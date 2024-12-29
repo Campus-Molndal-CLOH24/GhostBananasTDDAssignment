@@ -1,8 +1,8 @@
 ﻿using GhostBananasTDDAssignment.Logic;
 
-public class WorkshopStatus
+/* public class WorkshopStatus
 {
-    public void ShowStatus(GameState state)
+    public void ShowStatus(GameStates state)
     {
         Console.WriteLine("=== 🏠 TOMTEVERKSTADEN ===");
         Console.WriteLine($"Tillverkade presenter: {state.ToysMade} 🎁");
@@ -26,4 +26,4 @@ public class WorkshopStatus
 
         Console.WriteLine($"] {value}%");
     }
-}
+} */

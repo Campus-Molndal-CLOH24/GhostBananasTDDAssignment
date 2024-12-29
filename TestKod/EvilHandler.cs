@@ -1,4 +1,4 @@
-public class EvilMagicHandler
+ public class EvilMagicHandler
 {
     public bool TryDetectEvilMagic(Item item)
     {
@@ -25,4 +25,4 @@ public class EvilMagicHandler
             item.Name.ToLower().Contains(word) ||
             item.Description.ToLower().Contains(word));
     }
-}
+} 
