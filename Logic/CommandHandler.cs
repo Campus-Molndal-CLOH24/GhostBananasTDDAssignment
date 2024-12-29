@@ -58,9 +58,9 @@ namespace GhostBananasTDDAssignment
             string direction = parts[1].ToLower();
 
             // Kallar på GameEngine för att faktiskt röra spelaren
-            bool kundeGå = _game.MovePlayer(direction);
+            bool movePlayer = _game.MovePlayer(direction);
 
-            if (kundeGå)
+            if (movePlayer)
             {
                 return $"Du går {direction}.";
             }

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GhostBananasTDDAssignment\GhostBananasTDDAssignment.csproj" />
+    <ProjectReference Include="..\GhostBananasTDDAssignment.csproj" />
   </ItemGroup>
   
 </Project>
