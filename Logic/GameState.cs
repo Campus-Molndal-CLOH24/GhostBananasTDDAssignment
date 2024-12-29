@@ -24,7 +24,7 @@ namespace GhostBananasTDDAssignment.Logic
         {
             // Skapa instanser av de fem rums-klasser du redan har definierat
             var polarkylansSkog = new PolarkylansSkog();
-            var isgrottansHjärta = new IsgrottansHjärta();
+            var isgrottansHjärta = new IsgrottansHjarta();
             var rudolfsHed = new RudolfsHed();
             var pepparkaksbyn = new Pepparkaksbyn();
             var tomteland = new Tomteland();

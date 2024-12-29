@@ -1,4 +1,6 @@
-﻿public class MainMenu
+﻿using System;
+
+public class MainMenu
 {
     public void ShowMenu()
     {
@@ -39,4 +41,21 @@
             }
         }
     }
+
+    private void StartNewGame()
+    {
+        
+    }
+    private void LoadGame()
+    {
+        throw new NotImplementedException();
+    }
+    private void ShowHelp()
+    {
+        throw new NotImplementedException();
+    }
+
+    
+
+    
 }

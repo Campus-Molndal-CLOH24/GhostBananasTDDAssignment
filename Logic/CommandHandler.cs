@@ -16,66 +16,66 @@ namespace GhostBananasTDDAssignment
             // Om inget skrevs in
             if (string.IsNullOrWhiteSpace(input))
             {
-                return "Du måste skriva in ett kommando!";
+                return "Du mï¿½ste skriva in ett kommando!";
             }
 
             // Dela upp kommandot i delar
             string[] commandParts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-            // För enkelhetens skull: ta första ordet som själva kommandot
+            // Fï¿½r enkelhetens skull: ta fï¿½rsta ordet som sjï¿½lva kommandot
             string command = commandParts[0].ToLower();
 
-            // Kolla vilket kommando det är och anropa rätt metod
+            // Kolla vilket kommando det ï¿½r och anropa rï¿½tt metod
             switch (command)
             {
-                case "gå":
+                case "gï¿½":
                     return HandleMovement(commandParts);
 
                 case "ta":
                 case "plocka":
                     return HandlePickup(commandParts);
 
-                case "hjälp":
+                case "hjï¿½lp":
                 case "?":
                     return ShowHelp();
 
                 default:
-                    // Om kommandot inte känns igen
-                    return $"Nu kunde jag tyvärr inte tolka kommandot '{command}'.";
+                    // Om kommandot inte kï¿½nns igen
+                    return $"Nu kunde jag tyvï¿½rr inte tolka kommandot '{command}'.";
             }
         }
 
 
-        /// Hanterar förflyttning ex gå norr
+        /// Hanterar fï¿½rflyttning ex gï¿½ norr
         private string HandleMovement(string[] parts)
         {
-            // parts[0] = "gå", parts[1] = "norr" (om spelaren skrev "gå norr")
+            // parts[0] = "gï¿½", parts[1] = "norr" (om spelaren skrev "gï¿½ norr")
             if (parts.Length < 2)
             {
-                return "Du måste skriva vilken riktning du vill gå åt exempel gå norr.";
+                return "Du mï¿½ste skriva vilken riktning du vill gï¿½ ï¿½t exempel gï¿½ norr.";
             }
 
             string direction = parts[1].ToLower();
 
-            // Kallar på GameEngine för att faktiskt röra spelaren
-            bool kundeGå = _game.MovePlayer(direction);
+            // Kallar pï¿½ GameEngine fï¿½r att faktiskt rï¿½ra spelaren
+            bool kundeGa = _game.MovePlayer(direction);
 
-            if (kundeGå)
+            if (kundeGa)
             {
-                return $"Du går {direction}.";
+                return $"Du gï¿½r {direction}.";
             }
             else
             {
-                return $"Du kan inte gå {direction} just nu.";
+                return $"Du kan inte gï¿½ {direction} just nu.";
             }
         }
 
-        /// Hanterar att plocka upp ett föremål exempel ta nyckel.
+        /// Hanterar att plocka upp ett fï¿½remï¿½l exempel ta nyckel.
         private string HandlePickup(string[] parts)
         {
             if (parts.Length < 2)
             {
-                return "Du måste skriva vad du vill plocka upp (ex: 'ta nyckel').";
+                return "Du mï¿½ste skriva vad du vill plocka upp (ex: 'ta nyckel').";
             }
 
             string itemName = parts[1].ToLower();
@@ -92,13 +92,13 @@ namespace GhostBananasTDDAssignment
             }
         }
 
-        /// Visar enkel hjälp om vilka kommandon som finns.
+        /// Visar enkel hjï¿½lp om vilka kommandon som finns.
         private string ShowHelp()
         {
-            return "Tillgängliga kommandon:\n" +
-                   "- gå [riktning] (ex: gå norr)\n" +
-                   "- ta/plocka [föremål] (ex: ta svärd)\n" +
-                   "- hjälp/? (visar denna hjälp)";
+            return "Tillgï¿½ngliga kommandon:\n" +
+                   "- gï¿½ [riktning] (ex: gï¿½ norr)\n" +
+                   "- ta/plocka [fï¿½remï¿½l] (ex: ta svï¿½rd)\n" +
+                   "- hjï¿½lp/? (visar denna hjï¿½lp)";
         }
     }
 }

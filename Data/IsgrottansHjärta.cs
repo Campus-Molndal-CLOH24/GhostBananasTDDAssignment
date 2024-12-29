@@ -2,29 +2,29 @@ using GhostBananasTDDAssignment.Data;
 using System.Collections.Generic;
 
 
-    public class IsgrottansHjärta : Room
+    public class IsgrottansHjarta : Room
     {
-        public IsgrottansHjärta()
+        public IsgrottansHjarta()
         {
-            Name = "Isgrottans Hjärta";
-            Description = "Du befinner dig i Isgrottans allra innersta rum. Väggarna av tjock is glimmar i skenet " +
-                          "från en ensam islykta, och golvet är täckt av frostblommor. " +
-                          "Mitt i rummet står den fruktade Marcus, iklädd en luva, med ett isklot i händerna. " +
-                          "Din värmekudde kan kanske smälta isklotet och befria presenterna. " +
-                          "När isklotet smälter dyker pepparkakshjälten fram och snor åt sig säcken. " +
-                          "Men Marcus vakter formar en ogenomtränglig mur framför utgången. " +
-                          "Du erbjuder Marcus en gåta:\n" +
-                          "\"Du kommer till ett vägskäl där en väg leder till en skatt och den andra leder till säker död.\"\n" +
-                          "Ska Marcus svara rätt eller fel? Fel = du går fri, rätt = du delar dina julklappar.\n\n" +
-                          "Rummet doftar svagt av isblommor och du hör ett svagt droppande ljud när iskristaller smälter " +
-                          "långsamt under din andedräkt.";
+            Name = "Isgrottans Hjï¿½rta";
+            Description = "Du befinner dig i Isgrottans allra innersta rum. Vï¿½ggarna av tjock is glimmar i skenet " +
+                          "frï¿½n en ensam islykta, och golvet ï¿½r tï¿½ckt av frostblommor. " +
+                          "Mitt i rummet stï¿½r den fruktade Marcus, iklï¿½dd en luva, med ett isklot i hï¿½nderna. " +
+                          "Din vï¿½rmekudde kan kanske smï¿½lta isklotet och befria presenterna. " +
+                          "Nï¿½r isklotet smï¿½lter dyker pepparkakshjï¿½lten fram och snor ï¿½t sig sï¿½cken. " +
+                          "Men Marcus vakter formar en ogenomtrï¿½nglig mur framfï¿½r utgï¿½ngen. " +
+                          "Du erbjuder Marcus en gï¿½ta:\n" +
+                          "\"Du kommer till ett vï¿½gskï¿½l dï¿½r en vï¿½g leder till en skatt och den andra leder till sï¿½ker dï¿½d.\"\n" +
+                          "Ska Marcus svara rï¿½tt eller fel? Fel = du gï¿½r fri, rï¿½tt = du delar dina julklappar.\n\n" +
+                          "Rummet doftar svagt av isblommor och du hï¿½r ett svagt droppande ljud nï¿½r iskristaller smï¿½lter " +
+                          "lï¿½ngsamt under din andedrï¿½kt.";
 
             Items = new List<Item>
         {
-            new Item("Islyktan", "En vackert uthuggen lykta av is, den enda ljuskällan i rummet."),
-            new Item("Frostblommor", "Ömtåliga, glittrande isblommor som växer ur golvets sprickor."),
-            new Item("Glasbit", "En skärva av iskristall från väggen, kall och hal i handen."),
-            new Item("Isnyckel", "En nyckel formad av is. Kanske kan den öppna något längre fram."),
+            new Item("Islyktan", "En vackert uthuggen lykta av is, den enda ljuskï¿½llan i rummet."),
+            new Item("Frostblommor", "ï¿½mtï¿½liga, glittrande isblommor som vï¿½xer ur golvets sprickor."),
+            new Item("Glasbit", "En skï¿½rva av iskristall frï¿½n vï¿½ggen, kall och hal i handen."),
+            new Item("Isnyckel", "En nyckel formad av is. Kanske kan den ï¿½ppna nï¿½got lï¿½ngre fram."),
         };
         }
     }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using GhostBananasTDDAssignment.Data;
 
 public class RudolfsHed : Room
@@ -6,18 +7,18 @@ public class RudolfsHed : Room
     public RudolfsHed()
     {
         Name = "Rudolfs Hed";
-        Description = "Du står på en vidsträckt, snötäckt hed där Rudolf brukar träna sina flygningar. " +
-                      "Den kalla vinden biter i kinderna och du kan se spår i snön som leder åt olika håll. " +
-                      "Rudolf syns inte till. Var gömmer han sig? (snön, stallet, bastun)\n\n" +
-                      "På avstånd hörs dova bjällror från andra renar, och luften doftar svagt av gran. " +
-                      "Det är stilla, men du anar att något eller någon gömmer sig i det vita landskapet.";
+        Description = "Du stï¿½r pï¿½ en vidstrï¿½ckt, snï¿½tï¿½ckt hed dï¿½r Rudolf brukar trï¿½na sina flygningar. " +
+                      "Den kalla vinden biter i kinderna och du kan se spï¿½r i snï¿½n som leder ï¿½t olika hï¿½ll. " +
+                      "Rudolf syns inte till. Var gï¿½mmer han sig? (snï¿½n, stallet, bastun)\n\n" +
+                      "Pï¿½ avstï¿½nd hï¿½rs dova bjï¿½llror frï¿½n andra renar, och luften doftar svagt av gran. " +
+                      "Det ï¿½r stilla, men du anar att nï¿½got eller nï¿½gon gï¿½mmer sig i det vita landskapet.";
 
         Items = new List<Item>
         {
-            new Item("Höbunt", "En liten bunt torrt hö, perfekt för att locka fram en hungrig ren."),
-            new Item("Renbjällra", "En bjällra som renarna brukar bära. Den klirrar fint och kan användas för att få uppmärksamhet."),
-            new Item("Värmeschal", "En lång, stickad schal som värmer i den isiga vinden."),
-            new Item("Snöskyffel", "En liten skyffel som kan användas för att gräva i snön, kanske för att leta efter något gömt.")
+            new Item("Hï¿½bunt", "En liten bunt torrt hï¿½, perfekt fï¿½r att locka fram en hungrig ren."),
+            new Item("Renbjï¿½llra", "En bjï¿½llra som renarna brukar bï¿½ra. Den klirrar fint och kan anvï¿½ndas fï¿½r att fï¿½ uppmï¿½rksamhet."),
+            new Item("Vï¿½rmeschal", "En lï¿½ng, stickad schal som vï¿½rmer i den isiga vinden."),
+            new Item("Snï¿½skyffel", "En liten skyffel som kan anvï¿½ndas fï¿½r att grï¿½va i snï¿½n, kanske fï¿½r att leta efter nï¿½got gï¿½mt.")
         };
     }
 }

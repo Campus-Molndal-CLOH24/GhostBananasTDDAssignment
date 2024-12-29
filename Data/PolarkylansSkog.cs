@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using GhostBananasTDDAssignment.Data;
 
 public class PolarkylansSkog : Room
@@ -6,18 +7,18 @@ public class PolarkylansSkog : Room
     public PolarkylansSkog()
     {
         Name = "Polarkylans Skog";
-        Description = "Du befinner dig i en gnistrande vinterskog där det skira ljuset bryts i kristallklara isflingor. " +
-                      "Trädstammarna är täckta av rimfrost och marken knarrar under dina steg. " +
-                      "I fjärran hörs ett avlägset ylande – det sägs att en talande isräv gömmer sig här. " +
-                      "Var kan han vara? (i sin lya, åker skridskor på sjön, plockar isblommor) " +
-                      "Du känner en lätt bris som får isflingorna i grenarna att rassla som små klockor.";
+        Description = "Du befinner dig i en gnistrande vinterskog dï¿½r det skira ljuset bryts i kristallklara isflingor. " +
+                      "Trï¿½dstammarna ï¿½r tï¿½ckta av rimfrost och marken knarrar under dina steg. " +
+                      "I fjï¿½rran hï¿½rs ett avlï¿½gset ylande ï¿½ det sï¿½gs att en talande isrï¿½v gï¿½mmer sig hï¿½r. " +
+                      "Var kan han vara? (i sin lya, ï¿½ker skridskor pï¿½ sjï¿½n, plockar isblommor) " +
+                      "Du kï¿½nner en lï¿½tt bris som fï¿½r isflingorna i grenarna att rassla som smï¿½ klockor.";
 
         Items = new List<Item>
         {
-            new Item("Isblomma", "En spröd, frostig blomma som skimrar i det svaga ljuset. Känslig och vacker."),
-            new Item("Iskristall", "En klar kristall av ren is. Den bryter ljuset i vackra mönster."),
-            new Item("Snötäcke", "Ett hopvikbart täcke vävt av snöflingor (ser mystiskt varmt ut trots allt)."),
-            new Item("Frostnyckel", "En nyckel formad av iskristaller, kanske kan den öppna något längre fram.")
+            new Item("Isblomma", "En sprï¿½d, frostig blomma som skimrar i det svaga ljuset. Kï¿½nslig och vacker."),
+            new Item("Iskristall", "En klar kristall av ren is. Den bryter ljuset i vackra mï¿½nster."),
+            new Item("Snï¿½tï¿½cke", "Ett hopvikbart tï¿½cke vï¿½vt av snï¿½flingor (ser mystiskt varmt ut trots allt)."),
+            new Item("Frostnyckel", "En nyckel formad av iskristaller, kanske kan den ï¿½ppna nï¿½got lï¿½ngre fram.")
         };
     }
 }
